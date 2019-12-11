@@ -8,6 +8,7 @@ public class Consumer {
 
     @JmsListener(destination = "standalone.queue")
     public void consume(String message) {
+
         System.out.println("Received Message: " + message);
     }
 }
